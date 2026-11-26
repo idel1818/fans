@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Idel Judanin — Content Strategist</title>
+<meta name="description" content="Your fans are better at your job than you are. Idel Judanin, Content Strategist.">
+<meta name="theme-color" content="#0B0B0F">
+<meta property="og:title" content="Your fans are better at your job than you are.">
+<meta property="og:description" content="Idel Judanin — Content Strategist">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#ffffff;
+  --bg:#0B0B0F;
+  --muted:#8A8C99;
+  --dim:#595C6B;
+  --line:#23242E;
+  --accent:#7B84F5;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-text-size-adjust:100%; overflow-x:hidden}
+body{
+  min-height:100svh; background:var(--bg); color:var(--ink);
+  font-family:'Inter',system-ui,-apple-system,sans-serif;
+  -webkit-font-smoothing:antialiased;
+  display:flex; align-items:center; justify-content:center;
+  padding:40px 24px calc(40px + env(safe-area-inset-bottom));
+}
+.wrap{width:100%; max-width:560px}
+
+h1{
+  font-size:clamp(38px,10.4vw,62px);
+  font-weight:900; letter-spacing:-.035em; line-height:1.03;
+  opacity:0; transform:translateY(16px);
+  animation:rise .72s cubic-bezier(.18,.72,.28,1) .06s forwards;
+}
+h1 em{font-style:normal; color:var(--accent)}
+
+.rule{
+  height:2px; background:var(--accent); margin:36px 0 32px;
+  transform:scaleX(0); transform-origin:left;
+  animation:grow .7s cubic-bezier(.18,.72,.28,1) .46s forwards;
+}
+
+.who{opacity:0; animation:rise .6s ease .6s forwards}
+.who .role{font-size:14px; font-weight:700; letter-spacing:.14em; text-transform:uppercase; color:var(--accent)}
+.who .name{font-size:clamp(30px,7.6vw,40px); font-weight:800; letter-spacing:-.02em; margin-top:10px}
+
+.links{margin-top:34px; border-top:1px solid var(--line); opacity:0; animation:rise .6s ease .74s forwards}
+a.row{
+  display:flex; align-items:center; gap:16px;
+  padding:21px 2px; border-bottom:1px solid var(--line);
+  color:var(--ink); text-decoration:none;
+  -webkit-tap-highlight-color:rgba(123,132,245,.18);
+  transition:padding-left .22s ease, color .22s ease;
+}
+a.row:active{padding-left:8px}
+@media(hover:hover){a.row:hover{padding-left:8px; color:var(--accent)}}
+a.row svg{flex:0 0 22px; width:22px; height:22px; color:var(--accent)}
+a.row .txt{min-width:0}
+a.row .lbl{display:block; font-size:12px; font-weight:700; letter-spacing:.12em; text-transform:uppercase; color:var(--dim)}
+a.row .val{display:block; font-size:clamp(18px,4.8vw,22px); font-weight:600; letter-spacing:-.01em; margin-top:4px; overflow-wrap:anywhere}
+a.row .arw{margin-left:auto; color:var(--dim); font-size:20px; flex:0 0 auto}
+
+.save{
+  display:block; margin-top:30px; text-align:center;
+  padding:19px 20px; border:1px solid var(--line); border-radius:14px;
+  color:var(--muted); text-decoration:none;
+  font-size:15px; font-weight:700; letter-spacing:.06em; text-transform:uppercase;
+  transition:border-color .22s ease, color .22s ease;
+  opacity:0; animation:rise .6s ease .86s forwards;
+}
+.save:active{border-color:var(--accent); color:var(--ink)}
+@media(hover:hover){.save:hover{border-color:var(--accent); color:var(--ink)}}
+
+.foot{margin-top:34px; font-size:12px; font-weight:700; letter-spacing:.3em; color:var(--dim); opacity:0; animation:rise .6s ease .96s forwards}
+
+@keyframes rise{to{opacity:1; transform:none}}
+@keyframes grow{to{transform:scaleX(1)}}
+@media(prefers-reduced-motion:reduce){
+  h1,.who,.links,.save,.foot{opacity:1!important; transform:none!important; animation:none!important}
+  .rule{transform:none!important; animation:none!important}
+}
+</style>
+</head>
+<body>
+<main class="wrap">
+
+  <h1>Your fans are better at your job <em>than you are.</em></h1>
+
+  <div class="rule"></div>
+
+  <div class="who">
+    <div class="role">Content Strategist</div>
+    <div class="name">Idel Judanin</div>
+  </div>
+
+  <nav class="links">
+    <a class="row" href="https://wa.me/12137131818">
+      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.95 1.17-.17.2-.35.22-.65.07-.3-.15-1.27-.47-2.42-1.49-.9-.8-1.5-1.79-1.67-2.09-.17-.3-.02-.47.13-.62.15-.15.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.67-1.61-.92-2.2-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48 0 1.46 1.06 2.87 1.21 3.07.15.2 2.09 3.2 5.07 4.37 2.98 1.17 2.98.78 3.52.73.54-.05 1.76-.72 2.01-1.42.25-.7.25-1.29.17-1.42-.07-.12-.27-.2-.57-.35M12.04 21.5h-.01a9.4 9.4 0 0 1-4.78-1.31l-.34-.2-3.55.93.95-3.46-.22-.36a9.38 9.38 0 0 1-1.44-5.01c0-5.18 4.22-9.4 9.4-9.4a9.34 9.34 0 0 1 6.64 2.76 9.32 9.32 0 0 1 2.75 6.65c0 5.18-4.22 9.4-9.4 9.4m8-17.39A11.26 11.26 0 0 0 12.04.78C5.82.78.78 5.82.78 12.03c0 1.99.52 3.93 1.5 5.64L.7 23.22l5.7-1.5a11.22 11.22 0 0 0 5.63 1.44h.01c6.21 0 11.26-5.05 11.26-11.26 0-3.01-1.17-5.84-3.3-7.96"/></svg>
+      <span class="txt"><span class="lbl">WhatsApp</span><span class="val">+1 213 713 1818</span></span>
+      <span class="arw" aria-hidden="true">&rsaquo;</span>
+    </a>
+    <a class="row" href="mailto:idel@wordout.tv">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2.5" y="4.5" width="19" height="15" rx="2.5"/><path d="m3 6.5 9 6 9-6"/></svg>
+      <span class="txt"><span class="lbl">Email</span><span class="val">idel@wordout.tv</span></span>
+      <span class="arw" aria-hidden="true">&rsaquo;</span>
+    </a>
+  </nav>
+
+  <a class="save" href="idel-judanin.vcf" download>Save my contact</a>
+
+  <div class="foot">WORDOUT</div>
+
+</main>
+</body>
+</html>
